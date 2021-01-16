@@ -5,7 +5,7 @@
 using namespace std;
 
 TEST(in, input) {
-    //Сложение
+    //Г‘Г«Г®Г¦ГҐГ­ГЁГҐ
     short n = 0;
     string s = "1+2+5+9";
     SizeTree(s, n);
@@ -16,7 +16,7 @@ TEST(in, input) {
     }
     EXPECT_EQ(testing::internal::GetCapturedStdout(), "1259+++");
 
-    //Вычитание
+    //Г‚Г»Г·ГЁГІГ Г­ГЁГҐ
     n = 0;
     string s = "1-2-5-7-1";
     SizeTree(s, n);
@@ -27,7 +27,8 @@ TEST(in, input) {
     }
     EXPECT_EQ(testing::internal::GetCapturedStdout(), "12-5-7-1-");
 
-    //Умножение
+    
+    //Г“Г¬Г­Г®Г¦ГҐГ­ГЁГҐ
     n = 0;
     string s = "6*2*5*9";
     SizeTree(s, n);
@@ -38,7 +39,7 @@ TEST(in, input) {
     }
     EXPECT_EQ(testing::internal::GetCapturedStdout(), "62*5*9*");
 
-    //Деление
+    //Г„ГҐГ«ГҐГ­ГЁГҐ
     n = 0;
     string s = "7/2/3";
     SizeTree(s, n);
@@ -60,7 +61,7 @@ TEST(in, input) {
     }
     EXPECT_EQ(testing::internal::GetCapturedStdout(), "134-27*34/7*-1+++");
 
-    //Скобки
+    //Г‘ГЄГ®ГЎГЄГЁ
     n = 0;
     string s = "7-3+5*(6+1/(2*4-5)-8)+7";
     SizeTree(s, n);
